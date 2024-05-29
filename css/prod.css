@@ -1,0 +1,104 @@
+body{
+    padding-bottom: 40px;
+}
+.proudct{
+    width: 90%;
+    margin: auto;
+    padding-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,160px);
+    grid-gap: 10px ;
+}
+.div_main_img{
+    grid-area: span 3/span 4;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Styling info sections*/
+.info_prod p span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(99, 99, 100);
+}
+.info_prod p{
+    margin-bottom: 40px;
+}
+.info_prod h3{
+    font-size: 1.7rem;
+    color: rgb(48, 48, 48);
+    margin-bottom: 40px;
+}
+.info_prod h1 span{
+    font-weight: 550;
+    color: rgb(4, 112, 69);
+}
+.info_prod h1{
+    margin-bottom: 15px;
+}
+.select label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 10px;
+    color: rgb(45, 45, 45);
+}
+.select select{
+    padding: 3px 5px;
+    border: none;
+    background-color: rgb(222, 221, 221);
+    border-radius: 3px;
+    outline: none;
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.select option{
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+.info_prod input{
+    padding: 4px 0 4px 25px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: rgb(222, 221, 221) ;
+    color: rgb(68, 68, 68);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.info_prod button{
+    margin-left: 40px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(137, 246, 137);
+    font-size: 1rem;
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+.info_prod button:hover{
+    background-color:rgb(117, 248, 117) ;
+}
+.info_prod h4{
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-bottom: 10px;
+    color: rgb(82, 79, 79);
+}
+.info_prod .dis{
+    line-height: 23px;
+    font-size: 1rem;
+    color: rgb(116, 114, 114);
+}
+

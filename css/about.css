@@ -1,0 +1,82 @@
+/* styling the paner*/
+.paner_about{
+    width:100%;
+    background-image: url(/images/HomeImg/about/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    padding-top: 10vh;   
+}
+.paner_about h3{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+.paner_about p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*styling who we are section*/
+.whoweare{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+    grid-template-rows: 300px;
+    grid-gap: 35px;
+    margin-top:30px ;
+}
+.whoweare img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.whoweare div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.whoweare p{
+    color: rgb(160, 160, 160);
+    line-height: 28px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+.whoweare h1{
+    color: rgb(80, 79, 79);
+    font-size: 2rem;
+}
+/* vido section*/
+.appdow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+    
+}
+video{
+    width: 50%;
+    height: 500px;
+    object-fit:cover;
+    border-radius: 30px;
+}
+.appdow h1{
+    font-size: 3rem;
+    margin: 40px 0;
+    color: gray;
+}
+.appdow h1 span{
+    text-decoration: underline;
+    color: rgb(102, 189, 102);
+}
+@media (max-width: 800px){
+    video{
+        height:800px ;
+        width: 70%;
+    }
+}
